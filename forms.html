@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>                              
+<title> forms </title>
+<style>
+#a
+{
+color:red;
+font-size:20px;
+font-family:arial;
+}
+#b
+{
+color:red;
+font-family:arial;
+}
+#c
+{
+color:red;
+font-size:20px;
+font-family:arial;
+}
+#d
+{
+color:red;
+font-size:20px;
+font-family:arial;
+}
+#e
+{
+color:red;
+font-size:20px;
+font-family:arial;
+}
+#f
+{
+color:red;
+font-size:20px;
+font-family:arial;
+}
+#hj
+{
+color:black;
+font-size:20px;
+}
+.ju
+{
+color:black;
+}
+</style>
+                                                   
+</head> 
+<body>                 <!-- using div tag -->
+<div style="background-color:red; height:30px;">
+</div>                                               <!-- HTML FORMS -->
+<u id="a">
+<h1 style ="text-align:center; font-size:30px; color:black">
+ FORMS
+</H1>
+</u>
+<div style="background-color:red; height:30px;">
+</div>
+<form method="post">                                      <!-- name tag -->
+ <u id="b">
+<label style=" font-size:20px;" class="ju">Name : </label> <br>
+</u>
+<input type ="text" name="name" required placeholder="Type your name" style="font-size:20px; "/>
+<br> <br>
+<u id="c">                                                <!-- email -->
+<label style=" font-size:20px;" class="ju"> Email : </label> <br>
+</u> 
+<input type ="email" name="email" required placeholder="example@gmail.com" style="font-size:20px;"/>
+<br> <br>
+                                                           <!-- password tag -->
+<u id="d">
+<label style=" font-size:20px;" class="ju"> Password: </label> <br>
+<input type ="password" name="password" required placeholder="must be 8 letters" style="font-size:20px;"/> </u> <br> <br>
+                      <!-- drop down option -->
+<u id="e">
+ <label style="font-size:20px;" class="ju"> Select Your Age: </label> <br>
+</u>                                          <!-- drop down -->
+<select  style="font-size:20px;" id="hj">
+<option required> 12 </option>
+<option required> 13 </option>
+<option required> 14 </option>
+<option  required> 15 </option>
+<option  required> 16 </option>
+</select>
+<br> <br>
+                                                          <!-- radio buttons -->
+<u id="f">
+<label style=" font-size:20px;" class="ju"> Select gender: </label> <br>
+</u>
+<label style=" font-size:20px;" > male </label> 
+<input type ="radio" name ="gender" required style=" font-size:20px;color:red;"/>
+<label style=" font-size:20px;"> female </label> 
+<input type ="radio" name ="gender" required  style=" font-size:20px;color:red;"/>
+<label style=" font-size:20px;"> other </label> 
+<input type ="radio" name ="gender" required style=" font-size:20px;color:red;"/>
+<br> <br>                                       <!-- checkbox -->
+<u id="a">
+<label style="font-size:20px;" class="ju"> select the course: </label>
+</u>
+<br>
+<label style=" font-size:20px;"> html </label>
+<input type ="checkbox" name="checkbox" required /> 
+<label style=" font-size:20px;"> css </label>
+<input type ="checkbox" name="checkbox"  /> 
+<label style=" font-size:20px;"> js</label>
+<input type ="checkbox" name="checkbox"/> 
+<label style=" font-size:20px;"> php </label>
+<input type ="checkbox" name="checkbox"/> 
+<br> <br> 
+                                <!-- colour -->
+<u id="a">
+<label style="font-size:20px;" class="ju"> Select the color: </label> <br>
+<input type="color" name="color" required placeholder="orange" style="font-size:20px;" />
+</u>
+<br> <br>
+                               <!-- date of birth -->
+<u id="a">
+<label style="font-size:20px;" class="ju"> Date of birth: </label> <br>
+<input type="date" name="date" required style="font-size:20px;"/>
+</u>
+<br> <br>
+                              <!-- upload any file -->
+<u id="a">
+<label style="font-size:20px;" class="ju"> Upload a File: </label> <br>
+<input type="file" name="file" required style="font-size:20px;"/>
+</u>
+<br> <br>
+                              <!-- other comments -->
+<u id="a">
+<label style="font-size:20px;" class="ju"> Other comments:</label> <br>
+<textarea name="message" required placeholder="enter your message">
+</textarea>
+<br> <br>                <! -- reset button -->
+<input type="reset" name="reset"  style="font-size:21px;">
+                             <!-- submit -->
+<input type ="submit" name="submit" required value="send" style="font-size:21px;"> 
+<hr>
+</form>
+</body>
+</html>
