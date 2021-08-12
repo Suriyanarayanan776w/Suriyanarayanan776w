@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<title> FORMS 2 </title>
+</head>
+<body>
+<fieldset>              <!-- USING FIELDSET TAG AND LEGEND TAG -->
+<legend> HTML FORMS </legend>                 <!-- HTML FORMS -->
+<form enctype="multipart/form-data">
+<p>                    <!-- NAME -->
+<label for="name"> Name: </label>
+<input type="text" name="name" required id="name" value="" placeholder="Type your name"/>
+</p>
+<br>
+<p>                      <!-- EMAIL -->
+<label for="email"> Email: </label>
+<input type="email" name="email" required id="email" value="" placeholder="example@gmail.com"/>
+</p>
+<br>
+<p>                       <!-- PASSWORD -->
+<label for ="password"> Password: </label>
+<input type="password" name="password" required id="password" max="6" value="">
+<br>
+<p>                           <!-- DROP DOWN -->
+<label for="dropdown"> Select your age : </label>
+<select name="age" required id="dropdown" value="age" multiple>    <!-- using required atribute -->
+<optgroup label ="male age">                    <!-- OPTION GROUP -->
+<option value="12"> 12 </option>
+<option value="13"> 13 </option>
+<option value="14"> 14 </option>
+<option value="15"> 15 </option>
+<option value="16"> 16 </option>
+<option value="17"> 17 </option>
+<option value="age" selected> age </option>        <!-- USING SELECTED ATRIBUTE -->
+</optgroup>
+<optgroup label ="femlae age" disabled> 
+<option value="12"> 12 </option>
+<option value="13"> 13 </option>
+<option value="14"> 14 </option>
+<option value="15"> 15 </option>
+<option value="16"> 16 </option>
+<option value="17"> 17 </option>
+</optgroup>
+</select>
+<br>
+                                  <!-- RADIO BUTTON -->
+<p>
+<label> Select gender: </label> <br>
+<input type="radio" name="gender" value="male" id="male"checked>
+<label for="male"> Male </label>
+</p>
+
+<p>
+<input type="radio" name="gender" value="female" id="female">
+<label for="female"> Female </label>
+</p>
+
+<p>
+<input type="radio" name="gender" value="transgender" id="transgender"> 
+<label for="transgender"> Transgender </label>
+</p>
+<br>                   <!-- CHECKBOX -->
+<p>
+<label> Select the course: </label>                <!-- using [] for backend values -->
+<input type="checkbox" name="checkbox"[] required value="html" id="html" checked> 
+<label for="html"> HTML </label>
+</p>
+
+<p>
+<input type="checkbox" name="checkbox"[]  value="css" id="css"> 
+<label for="css"> CSS </label>
+</p>
+
+<p>
+<input type="checkbox" name="checkbox"[] value="javascript" id="js"> 
+<label for="js"> JAVASCRIPT </label>
+</p>
+
+<p>
+<input type="checkbox" name="checkbox"[] value="php" id="php"> 
+<label for="php"> PHP </label>
+</p>
+<br>
+<Hr>
+                             <!-- COLOR -->             <!-- USING FOR AND ID -->
+<p>
+<label for="color"> Select the color: </label>
+<input type="color" name="color" value="color" id="color">
+</p>
+<br>
+<label for="date"> Date: </label>
+<input type="date" name="date" required id="date"> 
+</p>
+<br> 
+                           <!-- FILE -->
+<p>
+<label for="file"> File: </label>
+<input type="file" name="resume" required value="resume" id="file"> 
+</p>
+ <br>                          <!-- PHONE NUMBER -->
+<p>
+<label for="phonenumber"> Phone: </label>
+<input type="number" name="phone" required value="phonenumber" id="phonenumber"> 
+</p>
+<br>                            <!-- MONTH -->
+<p>
+<label for="month"> Month: </label>
+<input type="month" name="month" required value="month" id="month"> 
+</p> 
+ <br>                          <!-- SEARCH -->
+<p>
+<label for="search"> Search here: </label>
+<input type="search" name="search" required id="search"> 
+</p> 
+  <br>    
+<hr                       <!-- MARKS -->
+<p>
+<label for="range"> Marks: </label>
+<input type="range" name="marks" required min="0" max="100" step="10" id="date"> 
+</p>
+    <br>                         <!-- TIME -->
+<p>
+<label for="time">Time: </label>
+<input type="time" name="time" required id="time"> 
+</p>
+<br>                           <!-- WEEK -->
+<p>
+<label for="week"> Week: </label>
+<input type="week" name="week" required  id="week"> 
+</p>
+<br>                           <!-- URL -->
+<p>
+<label for="url"> URL: </label>
+<input type="url" name="url" required  id="url"> 
+</p>
+    <br>                        <!-- DATALIST -->                    
+<p>
+<label for="datalist"> Enter your place: </label>         <!-- Using list and id atribute -->
+<input type="text" name="datalist" required id="datalist" list="data1" placeholder="enter your city">
+<datalist id="data1">
+<option value="madurai"> madurai </option>
+<option value="manamadurai"> manamadurai </option>
+<option value="mailapur"> mailapur </option>
+<option value="theni"> theni </option>
+<option value="dindigul"> dindigul </option>
+<option value="chennai"> chennai </option>
+<option value="coimbatore"> coimbatore </option>
+<option value="tirupathi"> tirupathi </option>
+<option value="tirupur"> tirupur </option>
+</datalist>
+  <br>                            <!-- COMMENTS -->
+<p>
+<label for="message"> Enter your comments: </label>
+<textarea name="comments" required id="message" cols="20" rows="10" placeholder="enter your comments">
+</textarea> 
+<br> <br>
+<input type="reset" name="reset" value="refresh">           <!-- RESET BUTTON -->
+
+<input type="submit" value="register" name="login form">             <!-- SUBMIT BUTTON -->
+</fieldset>         <! -- FIELDSET -->
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
