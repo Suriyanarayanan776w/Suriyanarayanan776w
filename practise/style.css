@@ -1,0 +1,58 @@
+/* practise */
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+/* header */
+header{
+    background-color: black;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1%;
+}
+header:hover .div1 h1 span{ 
+    background-color: black;
+    color:blueviolet;
+    transition: all 0.8s ease-in-out;
+
+}
+header:hover .div1 h1{ 
+    background-color: black;
+    color:rgb(245, 21, 21);
+    transition: all 0.8s ease-in-out;
+
+}
+header:hover .links li{
+    background-color:black;
+    color:violet;
+    transition: all 0.6s ease-in-out;
+}
+
+/* ul */
+.ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0% 6%;
+}
+/* list */
+.links{
+    display: flex;
+    list-style-type: none;
+    
+}
+.links li{
+    font-size: 19px;
+    margin: 0% 20px;
+    border-radius: 24px;
+    padding:7px 14px;
+    cursor: pointer;
+}
+
+.div1 h1 span{
+    color:red;
+}
+.links li:hover{
+    
+}
